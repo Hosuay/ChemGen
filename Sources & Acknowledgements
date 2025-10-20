@@ -1,0 +1,297 @@
+Sources and Acknowledgements:
+
+# Citations & References
+
+This document provides comprehensive citations for all methods, algorithms, and tools used in VariantProject. Please cite the appropriate papers when using this software in academic or research contexts.
+
+---
+
+## 📚 Core Software Libraries
+
+### RDKit
+**Primary Citation:**
+- **RDKit: Open-Source Cheminformatics Software**
+  - URL: https://www.rdkit.org
+  - Citation: RDKit: Open-source cheminformatics; http://www.rdkit.org
+  - Version used: Latest stable release
+
+**Key Papers:**
+- Landrum, G. (2016). "RDKit: A software suite for cheminformatics, computational chemistry, and predictive modeling." *Open source*. Available at: https://github.com/rdkit/rdkit
+
+### py3Dmol
+- **py3Dmol: Molecular visualization in Jupyter notebooks**
+  - Rego, N., & Koes, D. (2015). "3Dmol.js: molecular visualization with WebGL." *Bioinformatics*, 31(8), 1322-1324.
+  - DOI: 10.1093/bioinformatics/btu829
+  - URL: https://3dmol.csb.pitt.edu/
+
+### SELFIES
+- **SELFIES: Self-Referencing Embedded Strings**
+  - Krenn, M., Häse, F., Nigam, A., Friederich, P., & Aspuru-Guzik, A. (2020). "Self-referencing embedded strings (SELFIES): A 100% robust molecular string representation." *Machine Learning: Science and Technology*, 1(4), 045024.
+  - DOI: 10.1088/2632-2153/aba947
+  - arXiv: 1905.13741
+  - URL: https://github.com/aspuru-guzik-group/selfies
+
+### Scikit-learn
+- Pedregosa, F., et al. (2011). "Scikit-learn: Machine Learning in Python." *Journal of Machine Learning Research*, 12, 2825-2830.
+- URL: https://scikit-learn.org
+
+### NumPy
+- Harris, C. R., et al. (2020). "Array programming with NumPy." *Nature*, 585(7825), 357-362.
+- DOI: 10.1038/s41586-020-2649-2
+
+### Pandas
+- McKinney, W. (2010). "Data Structures for Statistical Computing in Python." *Proceedings of the 9th Python in Science Conference*, 56-61.
+- DOI: 10.25080/Majora-92bf1922-00a
+
+### Matplotlib & Seaborn
+- Hunter, J. D. (2007). "Matplotlib: A 2D Graphics Environment." *Computing in Science & Engineering*, 9(3), 90-95.
+- DOI: 10.1109/MCSE.2007.55
+
+- Waskom, M. L. (2021). "seaborn: statistical data visualization." *Journal of Open Source Software*, 6(60), 3021.
+- DOI: 10.21105/joss.03021
+
+---
+
+## 🧪 Chemical Descriptors & Properties
+
+### Molecular Weight, LogP, and Basic Descriptors
+- Wildman, S. A., & Crippen, G. M. (1999). "Prediction of physicochemical parameters by atomic contributions." *Journal of Chemical Information and Computer Sciences*, 39(5), 868-873.
+- DOI: 10.1021/ci990307l
+
+### Lipinski's Rule of Five
+- **Original Paper:**
+  - Lipinski, C. A., Lombardo, F., Dominy, B. W., & Feeney, P. J. (1997). "Experimental and computational approaches to estimate solubility and permeability in drug discovery and development settings." *Advanced Drug Delivery Reviews*, 23(1-3), 3-25.
+  - DOI: 10.1016/S0169-409X(96)00423-1
+
+- **Follow-up:**
+  - Lipinski, C. A. (2004). "Lead-and drug-like compounds: the rule-of-five revolution." *Drug Discovery Today: Technologies*, 1(4), 337-341.
+  - DOI: 10.1016/j.ddtec.2004.11.007
+
+### Topological Polar Surface Area (TPSA)
+- Ertl, P., Rohde, B., & Selzer, P. (2000). "Fast calculation of molecular polar surface area as a sum of fragment-based contributions and its application to the prediction of drug transport properties." *Journal of Medicinal Chemistry*, 43(20), 3714-3717.
+- DOI: 10.1021/jm000942e
+
+### Hydrogen Bond Donors and Acceptors
+- Calculated according to Lipinski definitions as implemented in RDKit
+- See Lipinski et al. (1997) above
+
+### Rotatable Bonds
+- Veber, D. F., et al. (2002). "Molecular properties that influence the oral bioavailability of drug candidates." *Journal of Medicinal Chemistry*, 45(12), 2615-2623.
+- DOI: 10.1021/jm020017n
+
+---
+
+## 🔬 Molecular Fingerprints & Similarity
+
+### Morgan Fingerprints (ECFP)
+- **Original ECFP Paper:**
+  - Rogers, D., & Hahn, M. (2010). "Extended-connectivity fingerprints." *Journal of Chemical Information and Modeling*, 50(5), 742-754.
+  - DOI: 10.1021/ci100050t
+
+- **Morgan Algorithm:**
+  - Morgan, H. L. (1965). "The generation of a unique machine description for chemical structures-a technique developed at chemical abstracts service." *Journal of Chemical Documentation*, 5(2), 107-113.
+  - DOI: 10.1021/c160017a018
+
+### Tanimoto Similarity
+- **Original Concept:**
+  - Tanimoto, T. T. (1958). "An Elementary Mathematical theory of Classification and Prediction." *IBM Internal Report*.
+
+- **Application in Chemistry:**
+  - Willett, P., Barnard, J. M., & Downs, G. M. (1998). "Chemical similarity searching." *Journal of Chemical Information and Computer Sciences*, 38(6), 983-996.
+  - DOI: 10.1021/ci9800211
+
+---
+
+## 🏗️ Molecular Scaffolds
+
+### Murcko Scaffolds
+- **Original Paper:**
+  - Bemis, G. W., & Murcko, M. A. (1996). "The properties of known drugs. 1. Molecular frameworks." *Journal of Medicinal Chemistry*, 39(15), 2887-2893.
+  - DOI: 10.1021/jm9602928
+
+- **Follow-up:**
+  - Bemis, G. W., & Murcko, M. A. (1999). "Properties of known drugs. 2. Side chains." *Journal of Medicinal Chemistry*, 42(25), 5095-5099.
+  - DOI: 10.1021/jm9903996
+
+---
+
+## 🔮 3D Structure Generation & Optimization
+
+### ETKDG (Experimental Torsion Knowledge Distance Geometry)
+- **3D Conformer Generation:**
+  - Riniker, S., & Landrum, G. A. (2015). "Better informed distance geometry: using what we know to improve conformation generation." *Journal of Chemical Information and Modeling*, 55(12), 2562-2574.
+  - DOI: 10.1021/acs.jcim.5b00654
+
+### MMFF (Merck Molecular Force Field)
+- **Force Field Development:**
+  - Halgren, T. A. (1996). "Merck molecular force field. I-V." *Journal of Computational Chemistry*, 17(5-6), 490-641.
+  - DOI: 10.1002/(SICI)1096-987X(199604)17:5/6<490::AID-JCC1>3.0.CO;2-P
+
+---
+
+## 🤖 Machine Learning Methods
+
+### Random Forest
+- **Original Algorithm:**
+  - Breiman, L. (2001). "Random Forests." *Machine Learning*, 45(1), 5-32.
+  - DOI: 10.1023/A:1010933404324
+
+### QSAR/QSPR Background
+- **General Review:**
+  - Cherkasov, A., et al. (2014). "QSAR modeling: where have you been? Where are you going to?" *Journal of Medicinal Chemistry*, 57(12), 4977-5010.
+  - DOI: 10.1021/jm4004285
+
+---
+
+## 📊 Chemical Space Exploration
+
+### Molecular Design and Optimization
+- **Chemical Space Concepts:**
+  - Dobson, C. M. (2004). "Chemical space and biology." *Nature*, 432(7019), 824-828.
+  - DOI: 10.1038/nature03192
+
+- **De Novo Drug Design:**
+  - Schneider, G., & Fechner, U. (2005). "Computer-based de novo design of drug-like molecules." *Nature Reviews Drug Discovery*, 4(8), 649-663.
+  - DOI: 10.1038/nrd1799
+
+### Similarity-Based Virtual Screening
+- Willett, P. (2006). "Similarity-based virtual screening using 2D fingerprints." *Drug Discovery Today*, 11(23-24), 1046-1053.
+- DOI: 10.1016/j.drudis.2006.10.005
+
+---
+
+## 🎯 Drug-likeness and ADME Properties
+
+### Drug-likeness Concepts
+- **Comprehensive Review:**
+  - Bickerton, G. R., et al. (2012). "Quantifying the chemical beauty of drugs." *Nature Chemistry*, 4(2), 90-98.
+  - DOI: 10.1038/nchem.1243
+
+### Synthetic Accessibility
+- Ertl, P., & Schuffenhauer, A. (2009). "Estimation of synthetic accessibility score of drug-like molecules based on molecular complexity and fragment contributions." *Journal of Cheminformatics*, 1(1), 8.
+- DOI: 10.1186/1758-2946-1-8
+
+---
+
+## 🧬 Related Methodologies
+
+### Graph-Based Molecular Representations
+- Duvenaud, D. K., et al. (2015). "Convolutional networks on graphs for learning molecular fingerprints." *Advances in Neural Information Processing Systems*, 28, 2224-2232.
+- arXiv: 1509.09292
+
+### Molecular Generation with AI
+- **Deep Learning for Molecules:**
+  - Gómez-Bombarelli, R., et al. (2018). "Automatic chemical design using a data-driven continuous representation of molecules." *ACS Central Science*, 4(2), 268-276.
+  - DOI: 10.1021/acscentsci.7b00572
+
+- **Graph Neural Networks:**
+  - Gilmer, J., et al. (2017). "Neural message passing for quantum chemistry." *International Conference on Machine Learning*, 1263-1272.
+  - arXiv: 1704.01212
+
+---
+
+## 📖 General Cheminformatics References
+
+### Textbooks and Reviews
+
+1. **Leach, A. R., & Gillet, V. J.** (2007). *An Introduction to Chemoinformatics*. Springer.
+   - ISBN: 978-1-4020-6291-9
+
+2. **Gasteiger, J.** (Ed.). (2003). *Handbook of Chemoinformatics: From Data to Knowledge*. Wiley-VCH.
+   - ISBN: 978-3-527-30680-7
+
+3. **Varnek, A., & Tropsha, A.** (Eds.). (2008). *Chemoinformatics Approaches to Virtual Screening*. Royal Society of Chemistry.
+   - ISBN: 978-0-85404-144-2
+
+4. **Engel, T., & Gasteiger, J.** (Eds.). (2018). *Chemoinformatics: Basic Concepts and Methods*. Wiley-VCH.
+   - ISBN: 978-3-527-33109-3
+
+---
+
+## 🔧 Software & Code Repositories
+
+### GitHub Repositories
+- **RDKit**: https://github.com/rdkit/rdkit
+- **SELFIES**: https://github.com/aspuru-guzik-group/selfies
+- **py3Dmol**: https://github.com/3dmol/3Dmol.js
+- **Scikit-learn**: https://github.com/scikit-learn/scikit-learn
+
+### Documentation
+- **RDKit Documentation**: https://www.rdkit.org/docs/
+- **py3Dmol Documentation**: https://3dmol.csb.pitt.edu/doc/index.html
+- **SELFIES Documentation**: https://selfies.readthedocs.io/
+
+---
+
+## 📝 How to Cite VariantProject
+
+If you use VariantProject in your research, please cite this repository:
+
+```bibtex
+@software{variantproject2024,
+  title={VariantProject: A Computational Molecular Exploration Tool for AI-Assisted Chemistry Research},
+  author={[Your Name]},
+  year={2024},
+  url={https://github.com/[your-username]/VariantProject},
+  note={A Python-based tool for similarity-guided molecular variant generation and evaluation}
+}
+```
+
+---
+
+## 🙏 Acknowledgments
+
+This project builds upon decades of research in cheminformatics, computational chemistry, and machine learning. We are grateful to:
+
+- The RDKit development team for providing excellent open-source cheminformatics tools
+- The developers of py3Dmol for enabling interactive molecular visualization
+- The creators of SELFIES for robust molecular representations
+- The scikit-learn community for accessible machine learning tools
+- All researchers whose work is cited here for advancing the field
+
+---
+
+## 📄 License Considerations
+
+Please note that while VariantProject itself may be open source, the underlying libraries have their own licenses:
+
+- **RDKit**: BSD 3-Clause License
+- **py3Dmol**: BSD 3-Clause License  
+- **SELFIES**: Apache License 2.0
+- **Scikit-learn**: BSD 3-Clause License
+- **NumPy**: BSD 3-Clause License
+- **Pandas**: BSD 3-Clause License
+- **Matplotlib**: PSF-based License
+
+Always review the specific license terms of each dependency.
+
+---
+
+## 📚 Additional Reading
+
+### Review Papers on Molecular Design
+- Brown, N., Fiscato, M., Segler, M. H., & Vaucher, A. C. (2019). "GuacaMol: benchmarking models for de novo molecular design." *Journal of Chemical Information and Modeling*, 59(3), 1096-1108.
+  - DOI: 10.1021/acs.jcim.8b00839
+
+- Grisoni, F., et al. (2021). "Combining generative artificial intelligence and on-chip synthesis for de novo drug design." *Science Advances*, 7(24), eabg3338.
+  - DOI: 10.1126/sciadv.abg3338
+
+### Computational Drug Discovery
+- Shoichet, B. K. (2004). "Virtual screening of chemical libraries." *Nature*, 432(7019), 862-865.
+  - DOI: 10.1038/nature03197
+
+- Bajorath, J. (2002). "Integration of virtual and high-throughput screening." *Nature Reviews Drug Discovery*, 1(11), 882-894.
+  - DOI: 10.1038/nrd941
+
+---
+
+## 📞 Contact & Contributions
+
+For questions about citations or to suggest additional references:
+- Contact: JoshLSmith24@aol.com
+
+**Last Updated**: October 2024
+
+---
+
+*This citations document is maintained as part of the VariantProject repository to ensure proper attribution and scientific rigor.*
