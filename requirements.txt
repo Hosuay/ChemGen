@@ -1,0 +1,23 @@
+# Core dependencies
+pandas>=1.3.0
+numpy>=1.21.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+scikit-learn>=0.24.0
+
+# Chemistry packages
+# Note: RDKit installation varies by platform
+# For conda: conda install -c conda-forge rdkit
+# For pip: pip install rdkit-pypi
+# rdkit-pypi>=2022.9.1  # Uncomment if using pip
+
+# Optional but recommended
+py3Dmol>=1.8.0
+selfies>=2.1.0
+tqdm>=4.62.0
+ipython>=7.30.0
+jupyter>=1.0.0
+
+# For notebook support
+ipywidgets>=7.6.0
+notebook>=6.4.0
